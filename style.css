@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+#form-container {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background: #0a0c0f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #0b0b0b;
+}
+
+#view-employees, #home, #home-edit {
+    margin-top: 1em;
+}
+
+
+
+#employees-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#employees-table th, #employees-table td {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#employees-table th {
+    background: #8597aa;
+    color: #fff;
+}
+
+#employees-table td button {
+    background: #ffc107;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+}
+
+#employees-table td button:hover {
+    background: #e0a800;
+}
+
+
+@media (max-width: 600px) {
+    #app {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    #employees-table th, #employees-table td {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+}
